@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row text-center">
+        {% for rel in relations %}
+        <div class="col-md-2 col-sm-2 col-xs-4" >
+            <span class="fa-stack fa-4x">
+                <img src = 'media/{{rel.subcategory.img}}' width='120' height = '120'> </img>
+            </span>
+            <h4 class="service-heading">{{rel.subcategory.name}}</h4>
+            <p class="text-muted">{{rel.subcategory.description}}<p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
